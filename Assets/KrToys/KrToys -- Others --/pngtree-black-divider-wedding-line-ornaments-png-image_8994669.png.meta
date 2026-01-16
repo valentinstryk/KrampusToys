@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: f24b3bd2eceeb4d48ad4d482e3a742dd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-black-divider-wedding-line-ornaments-png-image_8994669_31
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 574
+        width: 1044
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e60ec6c0d733d44cb678a2afce95f62
+      internalID: 721257181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3696df20f932af34395339269d194bdd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_0: 500209275
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_1: 92693002
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_10: 1346995134
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_11: -84121388
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_12: -203786271
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_13: 485478367
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_14: 729939112
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_15: -964758218
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_16: -1378931399
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_17: -39727091
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_18: 896699881
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_19: -962638239
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_2: 913125683
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_20: -1864688867
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_21: -1290434018
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_22: -844401851
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_23: 2045522165
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_24: 2146013723
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_25: -63176226
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_26: 201056393
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_27: -765604133
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_28: 2080835274
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_29: 1273644869
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_3: 2072721864
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_30: 532333850
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_31: 721257181
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_32: -1757032863
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_33: -1316247980
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_34: 883380622
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_35: 1551458023
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_36: -960397000
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_37: 1822778284
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_38: -887996208
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_39: -596244530
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_4: 1018835926
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_40: -499916582
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_41: 1144013541
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_42: -554570275
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_43: -568103244
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_44: -98933432
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_45: 1846757029
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_46: 3234315
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_47: -1677513304
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_48: 629673827
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_49: 1881177172
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_5: 1380164345
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_50: -1044359219
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_51: 523218546
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_52: 864867916
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_53: -802630832
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_54: 459207118
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_55: -1056673770
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_56: 958279023
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_57: 760988008
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_58: 1817968608
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_59: 1293948824
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_6: 171226471
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_60: -1243120770
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_7: -1245873746
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_8: -1743091793
+      pngtree-black-divider-wedding-line-ornaments-png-image_8994669_9: 1970212921
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
