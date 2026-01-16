@@ -59,4 +59,4 @@ public class PickingToy : MonoBehaviour
     }
 
     //Тест гит проверка - 1
-}
+}   //тест гит проверка - 2
