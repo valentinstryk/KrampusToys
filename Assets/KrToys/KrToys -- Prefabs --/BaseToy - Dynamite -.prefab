@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4875224419229920998, guid: 9eb1e8d8bc222724aad1384327bfae45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.42841
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4875224419229920998, guid: 9eb1e8d8bc222724aad1384327bfae45, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4875224419229920998, guid: 9eb1e8d8bc222724aad1384327bfae45, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.18431
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4875224419229920998, guid: 9eb1e8d8bc222724aad1384327bfae45, type: 3}
       propertyPath: m_LocalRotation.w
@@ -131,7 +131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3375908163465694281, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
       propertyPath: m_Name
-      value: BaseToy - Smiley - 1
+      value: BaseToy - Dynamite -
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

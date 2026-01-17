@@ -18,11 +18,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8315589556386567521, guid: f9b60a27078738944a0c40ee76872728, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.47933
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8315589556386567521, guid: f9b60a27078738944a0c40ee76872728, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.00701
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8315589556386567521, guid: f9b60a27078738944a0c40ee76872728, type: 3}
       propertyPath: m_LocalRotation.w
@@ -116,7 +116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3375908163465694281, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
       propertyPath: m_Name
-      value: BaseAnimal Variant 2
+      value: BaseToy - Hat -
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

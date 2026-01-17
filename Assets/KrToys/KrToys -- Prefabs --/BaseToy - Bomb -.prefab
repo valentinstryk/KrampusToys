@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7787639241322305023, guid: 171e957bfd2c5b5469aa784a8fe98cce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.42841
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7787639241322305023, guid: 171e957bfd2c5b5469aa784a8fe98cce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7787639241322305023, guid: 171e957bfd2c5b5469aa784a8fe98cce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.18431
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7787639241322305023, guid: 171e957bfd2c5b5469aa784a8fe98cce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -99,7 +99,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 640938755430930426, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.6194081
       objectReference: {fileID: 0}
     - target: {fileID: 640938755430930426, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -107,7 +107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 640938755430930426, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.78506917
       objectReference: {fileID: 0}
     - target: {fileID: 640938755430930426, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
       propertyPath: m_LocalRotation.z
@@ -131,7 +131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3375908163465694281, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
       propertyPath: m_Name
-      value: BaseToy - Smiley - 3
+      value: BaseToy - Bomb -
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

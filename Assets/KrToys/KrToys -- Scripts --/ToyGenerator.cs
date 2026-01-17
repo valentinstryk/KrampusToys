@@ -18,7 +18,7 @@ namespace KrToys
         public string[] toyList;
         public List<string> selectedWords = new List<string>();
         private GameObject newGm;
-        private List<Toy> spawned = new List<Toy>();
+        public List<Toy> spawned = new List<Toy>();
         public Point[] points;
 
         void Start()
@@ -45,6 +45,8 @@ namespace KrToys
                 newToy.Init(toy); // регистрируем игрушку
                 newToy.name = toy.name; // делаем имя игрушки без надписи (clone) 
                 spawned.Add(newToy); // добавляем нашу игрушку в массив 
+                Transform prefabMesh = newToy.GetComponentInChildren<MeshRenderer>().transform;
+                prefabMesh.gameObject.AddComponent<DoTweenAnim>();
             }
         }
 

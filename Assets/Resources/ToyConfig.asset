@@ -27,5 +27,5 @@ MonoBehaviour:
     name: dynamite
   - objToy: {fileID: 1676019734385126522, guid: 7a95770916db06246ad25f8858424111, type: 3}
     name: bomb
-  - objToy: {fileID: 1676019734385126522, guid: 7a95770916db06246ad25f8858424111, type: 3}
-    name: bomb
+  - objToy: {fileID: 1676019734385126522, guid: 39b558c48bf0fd648a4b5ca571384164, type: 3}
+    name: soccer boot

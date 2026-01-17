@@ -12,9 +12,6 @@ public class PickingToy : MonoBehaviour
     private ToyItem[] toys;
     private ToyConfigSO _config;
     public Image[] dash;
-    public Image hand;
-    public Sprite difHand; 
-    public AudioClip pickUpSound;
 
     public ToyGenerator toyGenerator; 
     // public TextMeshProUGUI[] text;

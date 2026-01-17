@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3375908163465694281, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
       propertyPath: m_Name
-      value: BaseAnimal Variant
+      value: BaseAnimal - Piggy -
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -79,16 +79,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 9096829762951036730}
     m_Modifications:
     - target: {fileID: 760208673069611208, guid: 2ab23d06eb8b0a74b9344bb811d48995, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 760208673069611208, guid: 2ab23d06eb8b0a74b9344bb811d48995, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 760208673069611208, guid: 2ab23d06eb8b0a74b9344bb811d48995, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 760208673069611208, guid: 2ab23d06eb8b0a74b9344bb811d48995, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 760208673069611208, guid: 2ab23d06eb8b0a74b9344bb811d48995, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2509
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 760208673069611208, guid: 2ab23d06eb8b0a74b9344bb811d48995, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.00525
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 760208673069611208, guid: 2ab23d06eb8b0a74b9344bb811d48995, type: 3}
       propertyPath: m_LocalRotation.w
