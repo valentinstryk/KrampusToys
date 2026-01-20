@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Door
+  - Santa
   layers:
   - Default
   - TransparentFX

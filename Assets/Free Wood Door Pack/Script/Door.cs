@@ -36,7 +36,7 @@ public class Door : MonoBehaviour {
 	
 		}  
 	}
-
+	
 	public void OpenDoor()
 	{
 		open = true;
