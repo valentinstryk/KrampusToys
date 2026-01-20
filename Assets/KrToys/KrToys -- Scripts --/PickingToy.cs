@@ -46,7 +46,7 @@ public class PickingToy : MonoBehaviour
         dash[toyGenerator.selectedWords.IndexOf(toy.gameObject.name)].gameObject.SetActive(true);
         toy.gameObject.SetActive(false);
         _toyCount++;
-        audioService.PlayCollectSound();
+        audioService.PlaySound(SoundType.CollectItem);
         CheckGameResult();
     }
 
