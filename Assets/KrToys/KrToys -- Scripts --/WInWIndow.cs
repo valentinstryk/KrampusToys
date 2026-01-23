@@ -2,7 +2,9 @@ using DoorScript;
 using KrToys;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
+using Cursor = UnityEngine.Cursor;
 
 public class WInWIndow : MonoBehaviour
 {
@@ -10,11 +12,13 @@ public class WInWIndow : MonoBehaviour
     public PlayerMovement playerMovement;
     public Button btnRestart;
     public PickingToy t;
-    public TextMeshProUGUI text;
-    public TextMeshProUGUI text2;
+   // public TextMeshProUGUI text;
+   // public TextMeshProUGUI text2;
     public ToyGenerator toyGen;
     public ToyConfigSO _config;
     public Door door;
+    public UIService uiService;
+    public Button btnRestart2; 
     
     private float _timer = 0;
 
@@ -22,25 +26,25 @@ public class WInWIndow : MonoBehaviour
     void Start()
     {
         btnRestart.onClick.AddListener(Restart);
+        btnRestart2.onClick.AddListener(Restart);
         _config = Resources.Load<ToyConfigSO>("ToyConfig");
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        _canvas.gameObject.SetActive(true);
-        playerMovement.StopPlayer(true);
-        text.text = ($"FINDED TOYS - {t._toyCount} / 5");
+    // void OnTriggerEnter(Collider other)
+  //  {
+       // _canvas.gameObject.SetActive(true);
+        // playerMovement.StopPlayer(true);
+        //text.text = ($"FINDED TOYS - {t._toyCount} / 5");
        // text2.text = _timer.ToString("0.0"); 
-        Cursor.visible = true;
-        playerMovement._controller.enabled = false;
+        //Cursor.visible = true;
+        // playerMovement._controller.enabled = false;
 
-    }
+   // }
 
-    void Restart()
+    public void Restart()
     {
         _canvas.gameObject.SetActive(false);
-        playerMovement.StopPlayer(false);
-        playerMovement.player.localPosition = new Vector3(0f, 0.5f, 0f);
+        playerMovement.player.localPosition = new Vector3(0, 0.5f, 0);
         t._toyCount = 0;
         _timer = 0;
         toyGen.ListGenerator();
@@ -54,11 +58,14 @@ public class WInWIndow : MonoBehaviour
         {
             d.gameObject.SetActive(false);
         }
-
-        playerMovement._controller.enabled = true;
+        
         toyGen.ClearAllToys();
         toyGen.SpawnProduct(_config.toys.Length);
         door.CloseDoor();
+        uiService.HideWinUI();
+        playerMovement.StopPlayer(false);
+        playerMovement._controller.enabled = true; 
+
     }
 
     void Update()

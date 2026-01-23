@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Compilation;
 using UnityEngine;
 namespace DoorScript
 {
@@ -24,9 +25,9 @@ public class Door : MonoBehaviour {
 	void Update () {
 		if (open)
 		{
-			
             var target = Quaternion.Euler (0, DoorOpenAngle, 0);
             transform.localRotation = Quaternion.Slerp(transform.localRotation, target, Time.deltaTime * 5 * smooth);
+            
 	
 		}
 		else

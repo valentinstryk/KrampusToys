@@ -9,19 +9,21 @@ public class PickingToy : MonoBehaviour
     [SerializeField] private Transform _playerCamera;
     [SerializeField] private LayerMask _layerMask;
     public int _toyCount = 0;
-    private ToyItem[] toys;
+    private ToyItem toys;
     private ToyConfigSO _config;
     public Image[] dash;
     float pickUpDistance = 15f;
     public UIService uiService;
     public AudioService audioService;
-
+    public PlayerMovement playerMovement;
     public ToyGenerator toyGenerator;
+    
     // public TextMeshProUGUI[] text;
 
     void Start()
     {
         toyGenerator.ListGenerator();
+        _config = Resources.Load<ToyConfigSO>(constants.toyConfig);
     }
 
     void Update()
@@ -46,17 +48,23 @@ public class PickingToy : MonoBehaviour
         dash[toyGenerator.selectedWords.IndexOf(toy.gameObject.name)].gameObject.SetActive(true);
         toy.gameObject.SetActive(false);
         _toyCount++;
-        audioService.PlaySound(SoundType.CollectItem);
+        AudioClip clip = toy.GetClip();
+        audioService.PlayToySound(clip);
         CheckGameResult();
+        
     }
 
-    void CheckGameResult()
+    public void CheckGameResult()
     {
         if (_toyCount >= 5)
         {
+            audioService.PlayWinGameSound();
+            playerMovement.StopPlayer(true);
+            playerMovement._controller.enabled = false; 
             uiService.ShowWinUI();
         }
+        
     }
 
-    //Тест гит проверка - 1
+    //Тест гит проверка - 1)
 }
