@@ -1,26 +1,31 @@
-using System;
-using DoorScript;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class SantaAgent : MonoBehaviour
+public class EnemyChase : MonoBehaviour
 {
-    public Transform player;
-    NavMeshAgent santa;
+    private NavMeshAgent agent;
+    public GameObject player;
     [SerializeField] private float updateRate = 0.2f;
     private float timer;
+    
+    void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
 
     void Start()
     {
-        santa = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
+        if (player == null)
+            return;
+
         timer -= Time.deltaTime;
         if (timer <= 0f)
         {
-            santa.SetDestination(player.transform.position);
+            agent.SetDestination(player.transform.position);
             timer = updateRate;
         }
     }

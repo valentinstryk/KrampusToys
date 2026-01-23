@@ -214,6 +214,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -654,6 +655,10 @@ PrefabInstance:
     - target: {fileID: 7595768727291368468, guid: 638a28683f4503e419cbf041696099f5, type: 3}
       propertyPath: m_Name
       value: Stairs_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595768727291368468, guid: 638a28683f4503e419cbf041696099f5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1109,11 +1114,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KrToys.AudioService
   _collectItem: {fileID: 8300000, guid: 794da6f0959fc3f47885767592d2e441, type: 3}
   _winGame: {fileID: 8300000, guid: bc37ad25465405a428a26ff0facd9a7b, type: 3}
-  audioSource: {fileID: 305594562}
-  audioSource2: {fileID: 1375053026}
-  audioSource3: {fileID: 374059024}
-  toy: {fileID: 779333380}
-  playerMovement: {fileID: 1042529649}
+  startSound: {fileID: 0}
+  santaLaughter: {fileID: 0}
+  devilLaugter: {fileID: 0}
+  audioSourceFx: {fileID: 0}
+  audioSourceBg: {fileID: 0}
+  pickingToy: {fileID: 0}
+  btnStart: {fileID: 0}
+  userInterface: {fileID: 0}
 --- !u!4 &103058862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 468701114270797141, guid: 39a319db297dbd94f83b2fb8bbc4ac09, type: 3}
@@ -1205,9 +1213,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1344569347}
     m_Modifications:
+    - target: {fileID: 4433089082674036248, guid: e8faf9cce2537774996f236175077f47, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_Name
       value: Floor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6577445029268737221, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_LocalScale.x
@@ -1500,6 +1516,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3ffe9c81d821881449b1cf297e6833c9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1739,6 +1759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor 5
       objectReference: {fileID: 0}
+    - target: {fileID: 939320806721747494, guid: f5059a1426c86bb44aabc8258df9f0a9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1755,6 +1779,10 @@ PrefabInstance:
     - target: {fileID: 8477358047230053546, guid: fbc41695c3d07074f815a9e93aff256f, type: 3}
       propertyPath: m_Name
       value: Floor 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477358047230053546, guid: fbc41695c3d07074f815a9e93aff256f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9146371682854901264, guid: fbc41695c3d07074f815a9e93aff256f, type: 3}
       propertyPath: m_LocalScale.x
@@ -2407,6 +2435,10 @@ PrefabInstance:
     - target: {fileID: 5857242018068947399, guid: bb6c8f1cbc56aa840aceaa4029ee163a, type: 3}
       propertyPath: m_Name
       value: Floor 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857242018068947399, guid: bb6c8f1cbc56aa840aceaa4029ee163a, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6485968761689848701, guid: bb6c8f1cbc56aa840aceaa4029ee163a, type: 3}
       propertyPath: m_LocalScale.x
@@ -3378,6 +3410,10 @@ PrefabInstance:
     - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_Name
       value: Floor 1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6577445029268737221, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_LocalScale.x
@@ -5103,6 +5139,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -6703,14 +6740,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653479718}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 12
   m_Type: 3
   m_Color: {r: 0.8867924, g: 0.6927951, b: 0.45594516, a: 1}
   m_Intensity: 1
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
@@ -7092,6 +7129,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -7920,6 +7958,7 @@ MonoBehaviour:
   data:
     objToy: {fileID: 0}
     name: 
+    customCollectSound: {fileID: 0}
 --- !u!1001 &779507146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8462,6 +8501,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor 1_4
       objectReference: {fileID: 0}
+    - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6577445029268737221, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1855772
@@ -8673,6 +8716,10 @@ PrefabInstance:
     - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_Name
       value: Floor 1_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6577445029268737221, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_LocalScale.x
@@ -9787,6 +9834,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -9975,6 +10023,10 @@ PrefabInstance:
     - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_Name
       value: Floor 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6577445029268737221, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_LocalScale.x
@@ -10410,6 +10462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_4
       objectReference: {fileID: 0}
+    - target: {fileID: 7595768727291368468, guid: 638a28683f4503e419cbf041696099f5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10540,6 +10596,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1042529652
 MeshFilter:
@@ -11607,6 +11664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_3
       objectReference: {fileID: 0}
+    - target: {fileID: 7595768727291368468, guid: 638a28683f4503e419cbf041696099f5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11894,6 +11955,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -12478,6 +12540,7 @@ Transform:
   - {fileID: 1869711472}
   - {fileID: 1428952875}
   - {fileID: 824411440}
+  - {fileID: 1636853760}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1345962940 stripped
@@ -12811,6 +12874,10 @@ PrefabInstance:
     - target: {fileID: 7595768727291368468, guid: 638a28683f4503e419cbf041696099f5, type: 3}
       propertyPath: m_Name
       value: Stairs_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595768727291368468, guid: 638a28683f4503e419cbf041696099f5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13328,6 +13395,10 @@ PrefabInstance:
     - target: {fileID: 7595768727291368468, guid: 638a28683f4503e419cbf041696099f5, type: 3}
       propertyPath: m_Name
       value: Stairs
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595768727291368468, guid: 638a28683f4503e419cbf041696099f5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14254,8 +14325,8 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  m_UseGeometry: 0
+    m_Bits: 128
+  m_UseGeometry: 1
   m_DefaultArea: 0
   m_GenerateLinks: 0
   m_IgnoreNavMeshAgent: 1
@@ -14263,9 +14334,9 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.033333335
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 2b1701dbb0a498a499e48e61e4180930, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: e01c1a8393167214190f502ea5056f71, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &1490937391
 Transform:
@@ -15385,6 +15456,118 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a45ae54f1ea0b254bb593bc30e3fd748, type: 3}
+--- !u!1 &1636853759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636853760}
+  - component: {fileID: 1636853763}
+  - component: {fileID: 1636853762}
+  - component: {fileID: 1636853761}
+  m_Layer: 7
+  m_Name: InvisibleStairs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1636853760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636853759}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.2599848, w: 0.9656127}
+  m_LocalPosition: {x: -1016.2289, y: 1.38, z: -1105.0144}
+  m_LocalScale: {x: 10.069499, y: 0.33379, z: 1.0269763}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1344569347}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30.138}
+--- !u!65 &1636853761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636853759}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1636853762
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636853759}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1636853763
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636853759}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1647314026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15607,6 +15790,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: -7.6
+  m_characterHorizontalScale: 1
   m_wordSpacing: -0.55
   m_lineSpacing: 0.05
   m_lineSpacingMax: 0
@@ -15659,6 +15843,10 @@ PrefabInstance:
     - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_Name
       value: Floor 1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5768011384902686335, guid: e8faf9cce2537774996f236175077f47, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6577445029268737221, guid: e8faf9cce2537774996f236175077f47, type: 3}
       propertyPath: m_LocalScale.x
@@ -15978,6 +16166,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1691098946
 MeshFilter:
@@ -17558,6 +17747,7 @@ MonoBehaviour:
   door: {fileID: 221200070}
   uiService: {fileID: 1532734245}
   btnRestart2: {fileID: 1502047271}
+  audioService: {fileID: 0}
 --- !u!1001 &1921608800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18419,6 +18609,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -19588,6 +19779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SantaAgent
   player: {fileID: 1042529648}
+  updateRate: 0.2
 --- !u!4 &2133970724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4867833127108836, guid: b1ddb286098809343b05dfcfcb099e4d, type: 3}

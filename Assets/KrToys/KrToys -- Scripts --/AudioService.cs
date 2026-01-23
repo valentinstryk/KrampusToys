@@ -12,59 +12,58 @@ namespace KrToys
         public AudioClip _winGame;
         public AudioClip startSound;
         public AudioClip santaLaughter;
-        public AudioClip devilLaugter; 
+        public AudioClip devilLaugter;
         public AudioSource audioSourceFx;
         public AudioSource audioSourceBg;
         public PickingToy pickingToy;
         public Button btnStart;
         public UIService userInterface;
-        
+
         void Start()
         {
-            btnStart.onClick.AddListener(PlayBackGroundSound);
+          // btnStart.onClick.AddListener(PlayBackGroundSound);
         }
-        
+
         public void PlayCollectSound()
         {
             audioSourceFx.Play();
         }
 
-     /*   public void PlaySound(SoundType soundType)
-        {
-            AudioClip currentClip = null;
-
-            switch (soundType)
-            {
-                case SoundType.CollectItem:
-                    currentClip = _collectItem;
-                    break;
-                case SoundType.WinGame:
-                    currentClip = _winGame;
-                    break;
-            }
-
-            audioSource.clip = currentClip;
-            audioSource.Play();
-        }
-*/
+        /*   public void PlaySound(SoundType soundType)
+           {
+               AudioClip currentClip = null;
+   
+               switch (soundType)
+               {
+                   case SoundType.CollectItem:
+                       currentClip = _collectItem;
+                       break;
+                   case SoundType.WinGame:
+                       currentClip = _winGame;
+                       break;
+               }
+   
+               audioSource.clip = currentClip;
+               audioSource.Play();
+           }
+   */
         public void PlayToySound(AudioClip clip)
         {
             audioSourceFx.clip = clip;
             audioSourceFx.Play();
         }
-        
+
         public void PlayBackGroundSound()
         {
-                audioSourceBg.clip = startSound;
-                audioSourceBg.Play();
-                
-            }
+            audioSourceBg.clip = startSound;
+            audioSourceBg.Play();
+        }
 
         public void PlayWinGameSound()
         {
             audioSourceFx.clip = santaLaughter;
             audioSourceFx.Play();
-            audioSourceBg.mute = true; 
+            audioSourceBg.mute = true;
         }
 
         public void PlayLoseSound()
@@ -73,10 +72,8 @@ namespace KrToys
             audioSourceFx.Play();
             audioSourceBg.mute = true;
         }
-        }
-        
     }
-
+}
 
 
 public enum SoundType

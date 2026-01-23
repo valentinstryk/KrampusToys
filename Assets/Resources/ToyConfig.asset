@@ -15,17 +15,25 @@ MonoBehaviour:
   toys:
   - objToy: {fileID: 1676019734385126522, guid: 3cf2647c02dd1c44ebdded11e732b5b1, type: 3}
     name: piggy
+    customCollectSound: {fileID: 8300000, guid: 195727a9fb85d6d4a8c9ee54dab7e2b0, type: 3}
   - objToy: {fileID: 1676019734385126522, guid: 5014d70c5808bde46bea9b48d208efe3, type: 3}
     name: smiley
+    customCollectSound: {fileID: 8300000, guid: 0eda3f0c8707d1a4e961c006bf211cbc, type: 3}
   - objToy: {fileID: 1676019734385126522, guid: 93655530212873e42b05e1e05fc6ab93, type: 3}
     name: dice
+    customCollectSound: {fileID: 8300000, guid: e766933f60397b0488e6c62c6e89a0b4, type: 3}
   - objToy: {fileID: 1676019734385126522, guid: a611bc41b090b834d89587099255cbe2, type: 3}
     name: hat
+    customCollectSound: {fileID: 0}
   - objToy: {fileID: 7032677648896197818, guid: 2ef0ac5690bfc5a4b9266db035b299d5, type: 3}
     name: idol
+    customCollectSound: {fileID: 0}
   - objToy: {fileID: 1676019734385126522, guid: 7e0da77ba325245498009662932c71b3, type: 3}
     name: dynamite
+    customCollectSound: {fileID: 0}
   - objToy: {fileID: 1676019734385126522, guid: 7a95770916db06246ad25f8858424111, type: 3}
     name: bomb
+    customCollectSound: {fileID: 0}
   - objToy: {fileID: 1676019734385126522, guid: 39b558c48bf0fd648a4b5ca571384164, type: 3}
     name: soccer boot
+    customCollectSound: {fileID: 0}
