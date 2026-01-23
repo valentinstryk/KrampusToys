@@ -5,4 +5,5 @@ using UnityEngine;
     {
         public Toy objToy;
         public string name;
+        public AudioClip customCollectSound;
     }

@@ -18,7 +18,8 @@ public class WInWIndow : MonoBehaviour
     public ToyConfigSO _config;
     public Door door;
     public UIService uiService;
-    public Button btnRestart2; 
+    public Button btnRestart2;
+    public AudioService audioService; 
     
     private float _timer = 0;
 
@@ -49,6 +50,8 @@ public class WInWIndow : MonoBehaviour
         _timer = 0;
         toyGen.ListGenerator();
 
+        audioService.audioSourceBg.mute = false;
+
         foreach (TextMeshProUGUI names in toyGen.toyNames)
         {
             names.fontStyle = FontStyles.Bold;
@@ -65,6 +68,7 @@ public class WInWIndow : MonoBehaviour
         uiService.HideWinUI();
         playerMovement.StopPlayer(false);
         playerMovement._controller.enabled = true; 
+        
 
     }
 

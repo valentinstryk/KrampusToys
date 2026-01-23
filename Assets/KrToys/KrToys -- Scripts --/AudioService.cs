@@ -13,8 +13,8 @@ namespace KrToys
         public AudioClip startSound;
         public AudioClip santaLaughter;
         public AudioClip devilLaugter; 
-        public AudioSource audioSource;
-        public AudioSource audioSource2;
+        public AudioSource audioSourceFx;
+        public AudioSource audioSourceBg;
         public PickingToy pickingToy;
         public Button btnStart;
         public UIService userInterface;
@@ -26,7 +26,7 @@ namespace KrToys
         
         public void PlayCollectSound()
         {
-            audioSource.Play();
+            audioSourceFx.Play();
         }
 
      /*   public void PlaySound(SoundType soundType)
@@ -49,32 +49,29 @@ namespace KrToys
 */
         public void PlayToySound(AudioClip clip)
         {
-            AudioClip currentClip = null;
-            _collectItem = clip;
-            currentClip = _collectItem;
-            audioSource.clip = currentClip;
-            audioSource.Play();
+            audioSourceFx.clip = clip;
+            audioSourceFx.Play();
         }
         
         public void PlayBackGroundSound()
         {
-                audioSource2.clip = startSound;
-                audioSource2.Play();
+                audioSourceBg.clip = startSound;
+                audioSourceBg.Play();
                 
             }
 
         public void PlayWinGameSound()
         {
-            audioSource.clip = santaLaughter;
-            audioSource.Play();
-            audioSource2.mute = true; 
+            audioSourceFx.clip = santaLaughter;
+            audioSourceFx.Play();
+            audioSourceBg.mute = true; 
         }
 
         public void PlayLoseSound()
         {
-            audioSource.clip = devilLaugter;
-            audioSource.Play();
-            audioSource2.mute = true;
+            audioSourceFx.clip = devilLaugter;
+            audioSourceFx.Play();
+            audioSourceBg.mute = true;
         }
         }
         
