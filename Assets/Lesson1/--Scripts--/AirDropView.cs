@@ -8,6 +8,7 @@ namespace Lesson1.__Scripts__
         
         public void PlaySmoke()
         {
+            smoke.gameObject.SetActive(true);
             smoke.Play();
         }
         

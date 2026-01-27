@@ -1805,6 +1805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WhiteCloudExplosion
       objectReference: {fileID: 0}
+    - target: {fileID: 4543516766397187933, guid: 58561ccd4ff815347844e0ddd6c45237, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4543516766397409411, guid: 58561ccd4ff815347844e0ddd6c45237, type: 3}
       propertyPath: m_RootOrder
       value: 6
