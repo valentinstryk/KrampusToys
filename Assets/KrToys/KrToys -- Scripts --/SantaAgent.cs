@@ -6,13 +6,14 @@ using UnityEngine.AI;
 public class SantaAgent : MonoBehaviour
 {
     public Transform player;
-    NavMeshAgent santa;
+    public NavMeshAgent santa;
     [SerializeField] private float updateRate = 0.2f;
     private float timer;
+    [SerializeField] private float speed = 3f;
 
     void Start()
     {
-        santa = GetComponent<NavMeshAgent>();
+        santa.speed = speed;
     }
 
     void Update()
