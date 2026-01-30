@@ -1526,6 +1526,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lesson1.__Scripts__.AirDropView
   smoke: {fileID: 6738024349812394528}
+  collectParticle: {fileID: 19839486, guid: 9f6e8efda3a5af24983aa491ef86446f, type: 3}
+  model: {fileID: 9114506093228744480}
 --- !u!1 &8685516395347071489
 GameObject:
   m_ObjectHideFlags: 0

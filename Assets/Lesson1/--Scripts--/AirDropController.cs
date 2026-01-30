@@ -15,6 +15,11 @@ public class AirDropController : MonoBehaviour
         {
             Drop();
         }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            CollectDrop();
+        }
     }
 
     private void Drop()
@@ -24,6 +29,11 @@ public class AirDropController : MonoBehaviour
         _newAirDrop.transform.DOMove(airDropGround.position, 2f).SetEase(Ease.Linear).OnComplete(PlaySmokeAirDrop);
     }
 
+    private void CollectDrop()
+    {
+        _newAirDrop.PlayCollect();
+    }
+    
     private void PlaySmokeAirDrop()
     {
         _newAirDrop.PlaySmoke();
